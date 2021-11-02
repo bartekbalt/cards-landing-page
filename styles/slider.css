@@ -1,9 +1,16 @@
+#slider h2 {
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
 .slider {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative7;
+  position: relative;
 }
 
 .slide {
@@ -14,12 +21,56 @@
   "text text text";
 }
 
+.slide h4 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.slide p {
+  text-align: center;
+}
+
 .slider-btn {
   position: absolute;
-  top: 0%;
-  left: 0%;
+  top: 30%;
+  border: none;
+  background-color: var(--color-secondary);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.next {
+  right: 0%;
+  transform: rotate(90deg)
+}
+
+.prev {
+  left: 0;
+  transform: rotate(-90deg)
+}
+
+.slider-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.slider-btn path {
+  fill: white;
 }
 
 .slider-image {
+  max-width: 50%;
   grid-area: image;
+  justify-self: center;
+  margin: 2rem 0;
+  margin-bottom: 4rem;
+}
+
+.slider-image img {
+  max-width: 100%;
 }
