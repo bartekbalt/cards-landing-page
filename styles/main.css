@@ -178,6 +178,12 @@ button {
   box-shadow: 0 10px 6px var(--color-primary);
 }
 
+.btn-secondary {
+  background: #cfe2ff;
+  color: #1b84e4;
+  border: none;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -224,4 +230,38 @@ button {
 
 .blockpadding {
   padding: 10px 0;
+}
+
+/* 3cards */
+.product-card {
+  display: flex;
+  background: var(--color-secondary);
+  border-radius: 20px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.product-card-img {
+  width: 80%;
+  transform: translateY(-40px);
+  opacity: 80%;
+}
+
+.product-card-header {
+  color: white;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.product-card-list {
+  padding: 0;
 }
