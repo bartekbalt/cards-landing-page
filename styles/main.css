@@ -128,14 +128,6 @@ nav a:visited {
   justify-content: space-evenly;
 }
 
-button {
-  padding: 1rem 1.5rem;
-  border-radius: 50px;
-  background: transparent;
-  border: 1px solid var(--color-primary);
-  color: #fff;
-}
-
 .hero-footer {
   display: flex;
   flex-direction: row;
@@ -162,10 +154,23 @@ button {
   z-index: 0;
 } */
 
+.button:not(.slider-btn) {
+  min-width: 200px;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  color: #fff;
+}
+
 .btn-group {
   display: flex;
   gap: 1rem;
   margin: 2rem 0;
+  height: 65px;
 }
 
 .btn-primary {
@@ -176,12 +181,32 @@ button {
   );
   border: 0;
   box-shadow: 0 10px 6px var(--color-primary);
+  width: 25%;
 }
 
 .btn-secondary {
+  display: block;
+  width: 50%;
   background: #cfe2ff;
   color: #1b84e4;
   border: none;
+}
+
+.btn-third {
+  display: block;
+  width: 15%;
+  background: #4188f3;
+  color: #d1e2fb;
+  border: none;
+}
+
+.form-btn {
+  margin-top: 30px;
+  background-color: #f56718;
+  border: none;
+  border-radius: 0px;
+  height: 50px;
+  width: 50px;
 }
 
 .grid {
@@ -230,6 +255,7 @@ button {
 
 .blockpadding {
   padding: 10px 0;
+  color: #aaaaaa;
 }
 
 /* 3cards */
@@ -264,4 +290,146 @@ button {
 
 .product-card-list {
   padding: 0;
+}
+
+#cards {
+  background-color: #f5f7fb;
+  padding: 50px 0;
+}
+
+#section-with-image {
+  background-color: #3279e3;
+  padding: 50px 0;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 100px;
+}
+
+.big-header2 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.blockpadding2 {
+  color: #cfe0f9;
+}
+
+.square {
+  width: 500px;
+  height: 500px;
+  border-radius: 5%;
+  background-image: linear-gradient(to bottom right, blue, white);
+}
+
+.appreg {
+  background-color: #3279e3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ending {
+  text-align: center;
+  font-size: 2.5em;
+  color: white;
+  font-weight: bold;
+}
+
+/* .store {
+  display: inline-block;
+  color: white;
+  border-width: 2px;
+  border-color: grey;
+  border-radius: 25px;
+  background-color: black;
+} */
+
+.store1 {
+  background-image: url("https://en.logodownload.org/wp-content/uploads/2019/06/get-it-on-google-play-badge.png");
+  background-size: 100%;
+}
+
+.store2 {
+  background-image: url("https://www.mipic.co/blog/wp-content/uploads/2019/07/app-store-icon-png-14.png");
+  background-size: 100%;
+}
+
+.store-btn {
+  border-radius: 20px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-group {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  color: #cfe0f9;
+  margin-top: 50px;
+}
+
+.stat span:first-child {
+  color: yellow;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50px 200px 100px;
+  color: white;
+  font-size: 30px;
+}
+
+.colorfoot {
+  padding-top: 200px;
+  background-color: #3279e3;
+}
+
+.footer-grid p {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.footer-title {
+  font-size: small;
+  font-weight: normal;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.logo {
+  color: white;
+}
+
+.logo span {
+  color: #74eeff;
+}
+
+.form {
+  display: flex;
+  direction: row;
+}
+
+#email {
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 60%;
+  border: none;
+  padding: 16px 20px;
+  height: 50px;
+}
+
+.footer-grid nav {
+  display: grid;
+  font-size: small;
+  word-spacing: 40px;
 }

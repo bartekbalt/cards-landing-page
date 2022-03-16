@@ -65,16 +65,21 @@
   fill: white;
 }
 
-.slider-image {
+.slider-container {
   max-width: 50%;
   grid-area: image;
   justify-self: center;
   margin: 2rem 0;
   margin-bottom: 4rem;
+  border-radius: 22px;
+  box-shadow: 0 10px 6px;
+  overflow: hidden;
 }
 
-.slider-image img {
-  max-width: 100%;
+.slider-image {
+  transform: translateX(-2px);
+  height: 101%;
+  max-width: 102%;
 }
 
 .dot {
